@@ -175,7 +175,7 @@ def read_link(
 ):
     link = helpers.get_link(db,  movie_id)
     if link is None:
-        raise HTTPException(status_code=404, detail=f"Aucun lien trouvé pour l'utilisateur {user_id} pour le Film avec l'ID {movie_id}")
+        raise HTTPException(status_code=404, detail=f"Aucun lien trouvé pour le Film avec l'ID {movie_id}")
     return link
 
 @app.get(
