@@ -86,7 +86,7 @@ def list_movies(
 
 # Obtenir l'évaluation d'utilisateur pour un film
 @app.get(
-    "/rating/{user_id}/{movie_id}",
+    "/ratings/{user_id}/{movie_id}",
     summary="Obtenir l'évaluation d'un utilisateur sur un film",
     description="Retourne l'évalutaion d'un utilisateur pour sur film",
     response_description="Détails de l'évaluation",
@@ -124,7 +124,7 @@ def list_ratings(
 
 # obtenir les tags
 @app.get(
-    "/tag/{user_id}/{movie_id}/{tag_text}",
+    "/tags/{user_id}/{movie_id}/{tag_text}",
     summary="Obtenir le tag d'un utilisateur sur un film",
     description="Retourne le tag d'un utilisateur pour sur film",
     response_description="Détails du tag",
@@ -162,7 +162,7 @@ def list_tags(
 
 # Obtenir les links
 @app.get(
-    "/link/{movie_id}",
+    "/links/{movie_id}",
     summary="Obtenir le tag d'un utilisateur sur un film",
     description="Retourne le tag d'un utilisateur pour sur film",
     response_description="Détails du tag",
@@ -197,7 +197,7 @@ def list_links(
 
 # Obtenir les statistiques sur la db
 @app.get(
-    "/analystics",
+    "/analytics",
     summary="Obtenir des statistiques",
     description="""
     Retourne un résumé analytique de la db
